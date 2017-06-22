@@ -1,17 +1,42 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Accueil.</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <div class="inline-block">
+    <h2>Points.</h2>
+    <a href="#" class="more-content">Voir tous les points</a>
+  </div>
+
+  <a href="#" class="shadow-radius">
+    <img src="assets/images/thumb-1.jpg" alt="">
+  </a>
+
+  <h2 class="marked-dot">Mes points marqués</h2>
+  <a href="#" class="shadow-radius">
+    <img src="assets/images/thumb-2.jpg" alt="">
+  </a>
+
+  <ion-grid class="custom-grid">
+    <ion-row>
+      <ion-col>
+        <a href="#" class="shadow-radius">
+          <img src="assets/images/thumb-2.jpg" alt="">
+        </a>
+      </ion-col>
+      <ion-col>
+        <a href="#" class="shadow-radius">
+          <img src="assets/images/thumb-2.jpg" alt="">
+        </a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    This starter project comes with simple tabs-based layout for apps that are going to primarily use a Tabbed UI.
   </p>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    Take a look at the <code>src/pages/</code> directory to add or change tabs, update any existing page or create new pages.
   </p>
 </ion-content>
