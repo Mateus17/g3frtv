@@ -8,7 +8,17 @@ import { NavController } from 'ionic-angular';
 export class PlayPage {
 
   constructor(public navCtrl: NavController) {
-
+    
   }
 
+  playVideo () {
+    /*var video = document.getElementById("#video");
+    video.play();
+    console.log('ok');*/
+  }
+  
+  okDemo() {
+    var videoPlayer = document.querySelector('.demo');
+    videoPlayer.classList.remove('demo');
+  }
 }

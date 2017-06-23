@@ -1,5 +1,52 @@
-<ion-header>
+<ion-header class="custom-bg-header">
   <ion-navbar>
     <ion-title>Point.</ion-title>
   </ion-navbar>
 </ion-header>
+
+<ion-content>
+  <div class="element-intro">
+    <div class="bg-circle"></div>
+  </div>
+  <div class="video-player demo">
+    <!--<a href="#" class="link-video-point">
+      <img src="assets/images/thumb-point.jpg" alt="">
+    </a>-->
+    <video poster="assets/images/thumb-point.jpg" (click)="playVideo()" id="video">
+      <source src="assets/zap.mp4" type="video/mp4">
+    </video>
+    <div class="demo-text">
+      <p>A tout moment durant la vidéo, marquez un point et retrouvez l'émission entière sur votre page d'accueil<br>
+      <a href="#" (click)="okDemo()">J'ai compris</a></p>
+    </div>
+    <div class="pin"></div>
+  </div>
+  <ion-toolbar padding class="delimiter">
+    <h3 class="maximize">le point du 27 juin</h3>
+    <h4>Durée : 2min42</h4>
+  </ion-toolbar>
+  <ion-grid class="custom-padding delimiter border-left-custom warning">
+    <ion-row>
+      <h5>le point du 27 juin</h5>
+    </ion-row>
+    <ion-row>
+      <h6><ion-icon name="time"></ion-icon> 2min42</h6>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="custom-padding delimiter">
+    <ion-row>
+      <h5>le point du 26 juin</h5>
+    </ion-row>
+    <ion-row>
+      <h6><ion-icon name="time"></ion-icon> 3min12</h6>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="custom-padding delimiter border-left-custom waiting">
+    <ion-row>
+      <h5>le point du 25 juin</h5>
+    </ion-row>
+    <ion-row>
+      <h6><ion-icon name="time"></ion-icon> 3min02</h6>
+    </ion-row>
+  </ion-grid>
+</ion-content>
